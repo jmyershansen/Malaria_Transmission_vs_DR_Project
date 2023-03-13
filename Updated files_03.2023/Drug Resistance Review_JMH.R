@@ -192,6 +192,8 @@ pfcrt_SNP3a$country <- as.factor(pfcrt_SNP3a$country)
 Meta1.pfcrt_SNP3a <- lmer(Prev_DR ~ year + PR + (1|country/study.Id), data=pfcrt_SNP3a)
 summary(Meta1.pfcrt_SNP3a)
 
+Meta1.pfcrt_SNP3a <- lmer(Prev_DR ~ year + PR + (1|study.Id), data=pfcrt_SNP3a)
+summary(Meta1.pfcrt_SNP3a)
 
 ###pfmdr1-86Y
 
@@ -215,6 +217,8 @@ Meta1.pfdhps_SNP3 <- lmer(Prev_DR ~ year + PR + (1|country/study.Id), data=pfdhp
 summary(Meta1.pfdhps_SNP3)
 anova(Meta1.pfdhps_SNP3, ddf= "Kenward-Roger")
 
+Meta2.pfdhps_SNP3 <- lmer(Prev_DR ~ year + PR + (1|study.Id), data=pfdhps_SNP3)
+summary(Meta2.pfdhps_SNP3)
 
 ###pfdhfr-108N
 
@@ -227,7 +231,8 @@ Meta1.pfdhfr_SNP3 <- lmer(Prev_DR ~ year + PR + (1|country/study.Id), data=pfdhf
 summary(Meta1.pfdhfr_SNP3)
 anova(Meta1.pfdhfr_SNP3, ddf= "Kenward-Roger")
 
-
+Meta2.pfdhfr_SNP3 <- lmer(Prev_DR ~ year + PR + (1|study.Id), data=pfdhfr_SNP3)
+summary(Meta2.pfdhfr_SNP3)
 
 
 
