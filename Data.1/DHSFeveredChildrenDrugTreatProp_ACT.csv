@@ -1,0 +1,251 @@
+year,country,ACT
+1993,Bukina Faso,NA
+1998,Burkina Faso,NA
+2003,Burkina Faso,NA
+2010,Burkina Faso,0.08068955
+2014,Burkina Faso,0.124748244
+2017,Burkina Faso,0.383997992
+1996,Benin,NA
+2001,Benin,NA
+2006,Benin,0.003476906
+2011,Benin,NA
+2017,Benin,0.061134875
+2010,Burundi,0.116653197
+2012,Burundi,0.17453359
+2016,Burundi,0.051735708
+2007,Congo DRC,0.003709195
+2013,Congo DRC,0.048817236
+1994,Central African Republic,NA
+2005,Congo Brazzaville,0.062800122
+2011,Congo Brazzaville,0.020248282
+1994,Cote D'ivoire,NA
+1998,Cote D'ivoire,NA
+2011,Cote D'ivoire,0.021860536
+1998,Cameroon,NA
+2004,Cameroon,NA
+2011,Cameroon,0.059157684
+2018,Cameroon,0.064302831
+2000,Ethiopia,NA
+2005,Ethiopia,NA
+2011,Ethiopia,NA
+2016,Ethiopia,0.008432921
+2000,Gabon,NA
+2012,Gabon,0.078916563
+2019,Gabon,0.008140265
+1993,Ghana ,NA
+1998,Ghana,NA
+2003,Ghana,NA
+2014,Ghana,0.371797027
+2019,Ghana,0.370292857
+2013,Gambia,0.025976725
+2019,Gambia,0.016425567
+1999,Guinea,NA
+2005,Guinea,NA
+2012,Guinea,0.008529711
+2018,Guinea,0.04262899
+2021,Guinea,0.081777662
+1998,Kenya,NA
+2003,Kenya,NA
+2008,Kenya,0.076894618
+2014,Kenya,0.230868831
+2015,Kenya,0.241301327
+2020,Kenya,NA
+2022,Kenya,0.117046871
+2012,Comoros,0.039661233
+2007,Liberia,NA
+2009,Liberia,0.297083105
+2011,Liberia,0.38406027
+2013,Liberia,0.233423899
+2016,Liberia,0.525824779
+2019,Liberia,0.190478346
+1992,Madagascar,NA
+1997,Madagascar,NA
+2003,Madagascar,NA
+2008,Madagascar,0.009911136
+2011,Madagascar,0.000599013
+2016,Madagascar,0.015602676
+2021,Madagascar,0.079269518
+2001,Mali,NA
+2006,Mali,NA
+2012,Mali,0.030398779
+2015,Mali,0.064286818
+2018,Mali,0.05233908
+2021,Mali,0.044158683
+2019,Mauritania,0.024978633
+2000,Malawi,NA
+2004,Malawi,NA
+2010,Malawi,0.357689909
+2012,Malawi,NA
+2014,Malawi,NA
+2015,Malawi,NA
+2017,Malawi,0.002487027
+1997,Mozambique ,NA
+2003,Mozambique,NA
+2015,Mozambique,0.005286687
+1990,Nigeria,NA
+2003,Nigeria,NA
+2008,Nigeria,0.021264967
+2010,Nigeria,0.052890566
+2013,Nigeria,0.045602813
+2015,Nigeria,0.138344079
+2018,Nigeria,0.221308306
+2021,Nigeria,0.13477559
+1998,Niger,NA
+2006,Niger,NA
+2012,Niger,0.107255331
+2021,Niger,0.296354679
+1992,Rwanda,NA
+2000,Rwanda,NA
+2005,Rwanda,NA
+2007,Rwanda,NA
+2010,Rwanda,0.04097086
+2013,Rwanda,NA
+2014,Rwanda,NA
+2017,Rwanda,0.193859309
+2019,Rwanda,0.075110058
+2008,Sierra Leone,0.053814457
+2013,Sierra Leone,0.366738019
+2016,Sierra Leone,NA
+2019,Sierra Leone,0.15006629
+1992,Senegal,NA
+1997,Senegal,NA
+2005,Senegal,NA
+2006,Senegal ,NA
+2008,Senegal,0.038848026
+2012,Senegal,0.008665704
+2014,Senegal,0.006846038
+2015,Senegal,0.004174295
+2016,Senegal,0.013861737
+2017,Senegal,0.030453617
+2018,Senegal,0.012221158
+2019,Senegal,0.005911861
+2020,Senegal,0.00032445
+2008,Sao Tome And Principe,0.032874225
+1996,Chad,NA
+2004,Chad,NA
+2014,Chad,0.02087002
+1998,Togo,NA
+2013,Togo,0.085974267
+2017,Togo,NA
+1991,Tanzania,NA
+1996,Tanzania,NA
+1999,Tanzania,NA
+2004,Tanzania,NA
+2007,Tanzania,0.209261228
+2010,Tanzania,0.360293172
+2011,Tanzania,NA
+2015,Tanzania,0.382103939
+2017,Tanzania,0.323540116
+1995,Uganda,NA
+2000,Uganda,NA
+2006,Uganda,0.02507335
+2009,Uganda,0.209353263
+2011,Uganda,0
+2014,Uganda,0.643532103
+2016,Uganda,0.609111946
+2018,Uganda,0.547296618
+1998,South Africa,NA
+2016,South Africa,0.004552434
+1992,Zambia,NA
+1996,Zambia,NA
+2001,Zambia,NA
+2007,Zambia,0.109022372
+2013,Zambia,0.364260371
+2018,Zambia,0.33725045
+1994,Zimbabwe,NA
+1999,Zimbabwe,NA
+2005,Zimbabwe,0
+2010,Zimbabwe,0.011225359
+2015,Zimbabwe,0.000338135
+1991,Cameroon,NA
+1993,Kenya,NA
+1996,Comoros,NA
+1995,Mali,NA
+1992,Malawi,NA
+1992,Niger,NA
+2015,Afghanistan,0.000784502
+1998,India,NA
+1998,India,NA
+1998,India,NA
+1993,Bangladesh,NA
+1996,Bangladesh,NA
+2000,Bangladesh,NA
+2004,Bangladesh,NA
+2007,Bangladesh,NA
+2011,Bangladesh,0.00015508
+2014,Bangladesh,0.002951116
+2017,Bangladesh,0.000557851
+1998,India,NA
+1998,India,NA
+1998,India,NA
+1998,India,NA
+1998,India,NA
+1998,India,NA
+1992,India,NA
+1998,India,NA
+2005,India ,0.0037692
+2015,India,0.01232155
+2019,India,0.010060818
+1998,India,NA
+1998,India,NA
+1998,India,NA
+1998,India,NA
+1998,India,NA
+1998,India,NA
+1998,India,NA
+1998,India,NA
+1998,India,NA
+1998,India,NA
+1998,India,NA
+1990,Pakistan,NA
+2006,Pakistan,NA
+2012,Pakistan,0.006183658
+2017,Pakistan,0.00233799
+1998,India,NA
+1998,India,NA
+1998,India,NA
+1998,India,NA
+1998,India,NA
+1998,India,NA
+1991,Yemen,NA
+2013,Yemen,NA
+2002,Indonesia,NA
+2007,Indonesia,NA
+2012,Indonesia,0.002608903
+2017,Indonesia,0.001048419
+2000,Cambodia,NA
+2005,Cambodia,0.000140837
+2010,Cambodia,NA
+2014,Cambodia,0.000949249
+2021,Cambodia,0.009198144
+2016,Myanmar,0.002100777
+1993,Philippines,NA
+1998,Philippines,NA
+2003,Philippines,NA
+2008,Philippines,NA
+2013,Philippines,NA
+2017,Philippines,0.000795941
+2022,Philippines,0.000413611
+2009,Timor-Leste,0.001722564
+2016,Timor-Leste,0.010726537
+1997,Vietnam,NA
+2002,Vietnam,NA
+1991,Brazil,NA
+1996,Brazil,NA
+1990,Colombia,NA
+1995,Colombia,NA
+2000,Colombia,NA
+2005,Colombia,NA
+2010,Colombia,NA
+2005,Guyana,0
+2009,Guyana,0
+1991,Peru,NA
+1996,Peru,NA
+2000,Peru,NA
+2008,Peru,NA
+2008,Peru,NA
+2005,Honduras,0.000509696
+2011,Honduras,0
+1998,Nicaragua,NA
+2001,Nicaragua,NA
+2016,Papua New Guinea,0.00746812

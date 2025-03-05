@@ -1,0 +1,427 @@
+country,year,ACT,data type
+Burkina Faso,2010,0.247,MIC1
+Burkina Faso,2014,0.278,MIC1
+Benin,2006,0.007,MIC1
+Burundi,2010,0.695,MIC1
+Burundi,2012,0.689,MIC1
+Cameroon,2011,0.262,MIC1
+Cameroon,2018,0.212,MIC1
+Ethiopia,2011,0.276,MIC1
+Gabon,2012,0.34,MIC1
+Ghana,2014,0.782,MIC1
+Ghana,2019,0.845,MIC1
+Gambia,2013,0.379,MIC1
+Guinea,2012,0.048,MIC1
+Guinea,2018,0.182,MIC1
+Kenya,2014,0.858,MIC1
+Kenya,2015,0.915,MIC1
+Kenya,2020,0.91,MIC1
+Comoros,2012,0.16,MIC1
+Liberia,2009,0.445,MIC1
+Liberia,2011,0.695,MIC1
+Liberia,2013,0.429,MIC1
+Liberia,2016,0.811,MIC1
+Madagascar,2011,0.192,MIC1
+Madagascar,2021,0.547,MIC1
+Mali,2015,0.083,MIC1
+Mali,2018,0.31,MIC1
+Mali,2021,0.148,MIC1
+Malawi,2010,0.835,MIC1
+Malawi,2012,0.909,MIC1
+Malawi,2014,0.883,MIC1
+Malawi,2017,0.964,MIC1
+Mozambique,2015,0.926,MIC1
+Nigeria,2008,0.072,MIC1
+Nigeria,2010,0.12,MIC1
+Nigeria,2013,0.183,MIC1
+Nigeria,2015,0.376,MIC1
+Nigeria,2018,0.52,MIC1
+Niger,2021,0.77,MIC1
+Rwanda,2013,0.917,MIC1
+Rwanda,2017,0.987,MIC1
+Sierra Leone,2008,0.214,MIC1
+Sierra Leone,2013,0.771,MIC1
+Senegal,2014,0.106,MIC1
+Senegal,2016,0.015,MIC1
+Senegal,2017,0.655,MIC1
+Senegal,2018,0.24,MIC1
+Togo,2017,0.183,MIC1
+Uganda,2006,0.049,MIC1
+Uganda,2009,0.391,MIC1
+Uganda,2016,0.878,MIC1
+Uganda,2018,0.877,MIC1
+Zambia,2007,0.288,MIC1
+Afghanistan,2015,0.044,MIC1
+Timor-Leste,2016,0.111,MIC1
+Togo,2006,0.028,MIC1
+Djibouti,2006,0.023,MIC1
+Ghana,2006,0.072,MIC1
+Malawi,2006,0.007,MIC1
+Mauritania,2007,0.053,MIC1
+Somalia,2006,0.107,MIC1
+Africa,2022,0.562,MIC1
+Angola,2007,0.055,MIC1
+Angola,2011,0.217,MIC1
+Angola,2016,0.767,MIC1
+Benin,2012,0.32,MIC1
+Benin,2014,0.131,MIC1
+Benin,2018,0.37,MIC1
+Burkina Faso,2018,0.794,MIC1
+Burkina Faso,2021,0.485,MIC1
+Cameroon,2014,0.151,MIC1
+Central African Republic,2010,0.095,MIC1
+Central African Republic,2019,0.302,MIC1
+Chad,2010,0.013,MIC1
+Chad,2015,0.1,MIC1
+Chad,2019,0.208,MIC1
+Congo,2005,0.14,MIC1
+Congo,2012,0.167,MIC1
+Congo,2015,0.37,MIC1
+Côte d'Ivoire,2016,0.641,MIC1
+Côte d'Ivoire,2021,0.386,MIC1
+Democratic Republic of the Congo,2007,0.021,MIC1
+Democratic Republic of the Congo,2010,0.041,MIC1
+Democratic Republic of the Congo,2014,0.17,MIC1
+Democratic Republic of the Congo,2018,0.419,MIC1
+Djibouti,2009,0.222,MIC1
+East and Southern Africa,2022,0.697,MIC1
+Eastern Africa,2022,0.804,MIC1
+Eastern and Southern Africa,2022,0.799,MIC1
+Equatorial Guinea,2011,0.441,MIC1
+Eritrea,2008,0.046,MIC1
+Eswatini,2010,0.197,MIC1
+Ethiopia,2007,0.468,MIC1
+Gambia,2006,0.002,MIC1
+Gambia,2017,0.31,MIC1
+Gambia,2018,0.29,MIC1
+Gambia,2020,0.467,MIC1
+Ghana,2008,0.477,MIC1
+Ghana,2011,0.346,MIC1
+Ghana,2018,0.101,MIC1
+Guinea,2016,0.165,MIC1
+Guinea-Bissau,2006,0.038,MIC1
+Guinea-Bissau,2014,0.47,MIC1
+Guinea-Bissau,2019,0.194,MIC1
+India,2006,0.056,MIC1
+India,2016,0.085,MIC1
+India,2021,0.06,MIC1
+Kenya,2009,0.335,MIC1
+Kenya,2010,0.513,MIC1
+Lao People's Democratic Republic,2006,0.018,MIC1
+Lao People's Democratic Republic,2012,0.105,MIC1
+Lao People's Democratic Republic,2017,0.039,MIC1
+Least developed countries,2022,0.559,MIC1
+Liberia,2020,0.412,MIC1
+Madagascar,2009,0.052,MIC1
+Madagascar,2013,0.061,MIC1
+Madagascar,2018,0.285,MIC1
+Malawi,2016,0.922,MIC1
+Malawi,2020,0.49,MIC1
+Mali,2010,0.224,MIC1
+Mali,2013,0.19,MIC1
+Mauritania,2011,0.064,MIC1
+Mauritania,2015,0.082,MIC1
+Mauritania,2021,0.19,MIC1
+Middle Africa,2022,0.431,MIC1
+Mozambique,2007,0.217,MIC1
+Mozambique,2011,0.599,MIC1
+Mozambique,2018,0.986,MIC1
+Namibia,2009,0.31,MIC1
+Namibia,2013,0.448,MIC1
+Nepal,2014,0.308,MIC1
+Nigeria,2011,0.109,MIC1
+Nigeria,2017,0.206,MIC1
+Pakistan,2018,0.033,MIC1
+Papua New Guinea,2018,0.717,MIC1
+Rwanda,2020,0.924,MIC1
+Sao Tome and Principe,2009,0.428,MIC1
+Sao Tome and Principe,2014,0.143,MIC1
+Senegal,2009,0.444,MIC1
+Senegal,2011,0.261,MIC1
+Senegal,2013,0.212,MIC1
+Senegal,2021,0.017,MIC1
+Sierra Leone,2005,0.023,MIC1
+Sierra Leone,2010,0.31,MIC1
+Sierra Leone,2017,0.158,MIC1
+South Asia,2022,0.054,MIC1
+South Sudan,2009,0.506,MIC1
+South Sudan,2010,0.082,MIC1
+Southeast Asia,2022,0.06,MIC1
+Southern Asia,2022,0.054,MIC1
+Sub-Saharan Africa,2022,0.562,MIC1
+Sudan,2010,0.329,MIC1
+Tajikistan,2005,0.002,MIC1
+Timor-Leste,2010,0.06,MIC1
+Togo,2010,0.282,MIC1
+Togo,2014,0.496,MIC1
+Uganda,2015,0.867,MIC1
+Tanzania,2008,0.376,MIC1
+Tanzania,2010,0.622,MIC1
+Tanzania,2012,0.613,MIC1
+Tanzania,2016,0.434,MIC1
+Tanzania,2017,0.894,MIC1
+Viet Nam,2011,0.001,MIC1
+West and Central Africa,2022,0.445,MIC1
+West and Central Africa,2022,0.44,MIC1
+Western Africa,2022,0.473,MIC1
+Zambia,2006,0.166,MIC1
+Zambia,2008,0.293,MIC1
+Zambia,2010,0.762,MIC1
+Zambia,2012,0.856,MIC1
+Zambia,2014,0.904,MIC1
+Zambia,2019,0.338,MIC1
+Zimbabwe,2011,0.491,MIC1
+Zimbabwe,2014,0.788,MIC1
+Bukina Faso,1993,NA,DHS
+Burkina Faso,1998,NA,DHS
+Burkina Faso,2003,NA,DHS
+Burkina Faso,2017,0.383997992,DHS
+Benin,1996,NA,DHS
+Benin,2001,NA,DHS
+Benin,2011,NA,DHS
+Benin,2017,0.061134875,DHS
+Burundi,2016,0.051735708,DHS
+Democratic Republic of the Congo,2007,0.003709195,DHS
+Democratic Republic of the Congo,2013,0.048817236,DHS
+Central African Republic,1994,NA,DHS
+Congo,2005,0.062800122,DHS
+Congo ,2011,0.020248282,DHS
+Côte d'Ivoire,1994,NA,DHS
+Côte d'Ivoire,1998,NA,DHS
+Côte d'Ivoire,2011,0.021860536,DHS
+Cameroon,1998,NA,DHS
+Cameroon,2004,NA,DHS
+Ethiopia,2000,NA,DHS
+Ethiopia,2005,NA,DHS
+Ethiopia,2016,0.008432921,DHS
+Gabon,2000,NA,DHS
+Gabon,2019,0.008140265,DHS
+Ghana,1993,NA,DHS
+Ghana,1998,NA,DHS
+Ghana,2003,NA,DHS
+Gambia,2019,0.016425567,DHS
+Guinea,1999,NA,DHS
+Guinea,2005,NA,DHS
+Guinea,2021,0.081777662,DHS
+Kenya,1998,NA,DHS
+Kenya,2003,NA,DHS
+Kenya,2008,0.076894618,DHS
+Kenya,2022,0.117046871,DHS
+Liberia,2007,NA,DHS
+Liberia,2019,0.190478346,DHS
+Madagascar,1992,NA,DHS
+Madagascar,1997,NA,DHS
+Madagascar,2003,NA,DHS
+Madagascar,2008,0.009911136,DHS
+Madagascar,2016,0.015602676,DHS
+Mali,2001,NA,DHS
+Mali,2006,NA,DHS
+Mali,2012,0.030398779,DHS
+Mauritania,2019,0.024978633,DHS
+Malawi,2000,NA,DHS
+Malawi,2004,NA,DHS
+Malawi,2015,NA,DHS
+Mozambique,1997,NA,DHS
+Mozambique,2003,NA,DHS
+Nigeria,1990,NA,DHS
+Nigeria,2003,NA,DHS
+Nigeria,2021,0.13477559,DHS
+Niger,1998,NA,DHS
+Niger,2006,NA,DHS
+Niger,2012,0.107255331,DHS
+Rwanda,1992,NA,DHS
+Rwanda,2005,NA,DHS
+Rwanda,2007,NA,DHS
+Rwanda,2010,0.04097086,DHS
+Rwanda,2014,NA,DHS
+Rwanda,2019,0.075110058,DHS
+Sierra Leone,2016,NA,DHS
+Sierra Leone,2019,0.15006629,DHS
+Senegal,1992,NA,DHS
+Senegal,1997,NA,DHS
+Senegal,2005,NA,DHS
+Senegal,2006,NA,DHS
+Senegal,2008,0.038848026,DHS
+Senegal,2012,0.008665704,DHS
+Senegal,2015,0.004174295,DHS
+Senegal,2019,0.005911861,DHS
+Senegal,2020,3.24E-04,DHS
+Sao Tome and Principe,2008,0.032874225,DHS
+Chad,1996,NA,DHS
+Chad,2004,NA,DHS
+Chad,2014,0.02087002,DHS
+Togo,1998,NA,DHS
+Togo,2013,0.085974267,DHS
+Tanzania,1991,NA,DHS
+Tanzania,1996,NA,DHS
+Tanzania,1999,NA,DHS
+Tanzania,2004,NA,DHS
+Tanzania,2007,0.209261228,DHS
+Tanzania,2010,0.360293172,DHS
+Tanzania,2011,NA,DHS
+Tanzania,2015,0.382103939,DHS
+Tanzania,2017,0.323540116,DHS
+Uganda,1995,NA,DHS
+Uganda,2000,NA,DHS
+Uganda,2011,0,DHS
+Uganda,2014,0.643532103,DHS
+South Africa,1998,NA,DHS
+South Africa,2016,0.004552434,DHS
+Zambia,1992,NA,DHS
+Zambia,1996,NA,DHS
+Zambia,2001,NA,DHS
+Zambia,2013,0.364260371,DHS
+Zambia,2018,0.33725045,DHS
+Zimbabwe,1994,NA,DHS
+Zimbabwe,1999,NA,DHS
+Zimbabwe,2005,0,DHS
+Zimbabwe,2010,0.011225359,DHS
+Zimbabwe,2015,3.38E-04,DHS
+Cameroon,1991,NA,DHS
+Kenya,1993,NA,DHS
+Comoros,1996,NA,DHS
+Mali,1995,NA,DHS
+Malawi,1992,NA,DHS
+Niger,1992,NA,DHS
+India,1998,NA,DHS
+India,1998,NA,DHS
+India,1998,NA,DHS
+Bangladesh,1993,NA,DHS
+Bangladesh,1996,NA,DHS
+Bangladesh,2000,NA,DHS
+Bangladesh,2004,NA,DHS
+Bangladesh,2007,NA,DHS
+Bangladesh,2011,1.55E-04,DHS
+Bangladesh,2014,0.002951116,DHS
+Bangladesh,2017,5.58E-04,DHS
+India,1998,NA,DHS
+India,1998,NA,DHS
+India,1998,NA,DHS
+India,1998,NA,DHS
+India,1998,NA,DHS
+India,1998,NA,DHS
+India,1992,NA,DHS
+India,1998,NA,DHS
+India,2005,0.0037692,DHS
+India,2015,0.01232155,DHS
+India,2019,0.010060818,DHS
+India,1998,NA,DHS
+India,1998,NA,DHS
+India,1998,NA,DHS
+India,1998,NA,DHS
+India,1998,NA,DHS
+India,1998,NA,DHS
+India,1998,NA,DHS
+India,1998,NA,DHS
+India,1998,NA,DHS
+India,1998,NA,DHS
+India,1998,NA,DHS
+Pakistan,1990,NA,DHS
+Pakistan,2006,NA,DHS
+Pakistan,2012,0.006183658,DHS
+Pakistan,2017,0.00233799,DHS
+India,1998,NA,DHS
+India,1998,NA,DHS
+India,1998,NA,DHS
+India,1998,NA,DHS
+India,1998,NA,DHS
+India,1998,NA,DHS
+Yemen,1991,NA,DHS
+Yemen,2013,NA,DHS
+Indonesia,2002,NA,DHS
+Indonesia,2007,NA,DHS
+Indonesia,2012,0.002608903,DHS
+Indonesia,2017,0.001048419,DHS
+Cambodia,2000,NA,DHS
+Cambodia,2005,1.41E-04,DHS
+Cambodia,2010,NA,DHS
+Cambodia,2014,9.49E-04,DHS
+Cambodia,2021,0.009198144,DHS
+Myanmar,2016,0.002100777,DHS
+Philippines,1993,NA,DHS
+Philippines,1998,NA,DHS
+Philippines,2003,NA,DHS
+Philippines,2008,NA,DHS
+Philippines,2013,NA,DHS
+Philippines,2017,7.96E-04,DHS
+Philippines,2022,4.14E-04,DHS
+Timor-Leste,2009,0.001722564,DHS
+Viet Nam,1997,NA,DHS
+Viet Nam,2002,NA,DHS
+Brazil,1991,NA,DHS
+Brazil,1996,NA,DHS
+Colombia,1990,NA,DHS
+Colombia,1995,NA,DHS
+Colombia,2000,NA,DHS
+Colombia,2005,NA,DHS
+Colombia,2010,NA,DHS
+Guyana,2005,0,DHS
+Guyana,2009,0,DHS
+Peru,1991,NA,DHS
+Peru,1996,NA,DHS
+Peru,2000,NA,DHS
+Peru,2008,NA,DHS
+Peru,2008,NA,DHS
+Honduras,2005,5.10E-04,DHS
+Honduras,2011,0,DHS
+Nicaragua,1998,NA,DHS
+Nicaragua,2001,NA,DHS
+Papua New Guinea,2016,0.00746812,DHS
+Angola,2001,NA,MICS
+Bolivia,2000,NA,MICS
+Burundi,2000,NA,MICS
+Cameroon,2000,NA,MICS
+Central African Republic,2000,NA,MICS
+Chad,2000,NA,MICS
+Comoros,2000,NA,MICS
+Côte d'Ivoire,2000,NA,MICS
+DominicanRepublic,2000,NA,MICS
+Democratic Republic of the Congo,2001,NA,MICS
+Equatorial Guinea,2000,NA,MICS
+Gambia,2000,NA,MICS
+Guinea-Bissau,2000,NA,MICS
+Guyana,2000,NA,MICS
+Indonesia,2000,NA,MICS
+Kenya,2000,NA,MICS
+Lao People's Democratic Republic,2000,NA,MICS
+Lesotho,2000,NA,MICS
+Madagascar,2000,NA,MICS
+Moldova,2000,NA,MICS
+Mongolia,2000,NA,MICS
+Niger,2000,NA,MICS
+Philippines,2000,NA,MICS
+Rwanda,2000,NA,MICS
+Sao Tome,2000,NA,MICS
+Senegal,2000,NA,MICS
+Sierra Leone,2000,NA,MICS
+Sudan,2000,NA,MICS
+South Sudan,2000,NA,MICS
+Suriname,2000,NA,MICS
+Swaziland,2000,NA,MICS
+Tajikistan,2000,NA,MICS
+TrinidadTobago,2000,NA,MICS
+Venezuela,2000,NA,MICS
+Burkina Faso,2006,0,MICS
+Burundi,2005,0.026685446,MICS
+Cameroon,2006,0.008823415,MICS
+Central African Republic,2006,0.012608177,MICS
+Cuba,2006,NA,MICS
+Gambia,2005,0,MICS
+Guinea-Bissau,2006,0.001654125,MICS
+Guyana,2006,0,MICS
+Côte d'Ivoire,2006,0.020401486,MICS
+Jamaica,2005,NA,MICS
+Lao,2006,0.00148861,MICS
+Mongolia,2005,NA,MICS
+Mozambique,2008,NA,MICS
+Nigeria,2007,0.01071355,MICS
+Sierra Leone,2005,0.003232301,MICS
+Suriname,2006,NA,MICS
+Thailand,2005,NA,MICS
+Togo,2006,0.007202729,MICS
+TrinidadTobago,2006,NA,MICS
+Vanuatu,2007,NA,MICS
+Viet Nam,2006,NA,MICS
+Yemen,2006,NA,MICS
+Bangladesh,2006,NA,MICS
+Belize,2006,NA,MICS

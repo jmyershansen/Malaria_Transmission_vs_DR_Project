@@ -1,0 +1,174 @@
+country,year,ACT_use
+Afghanistan,2015,0.044000000000000004
+Africa,2022,0.562
+Angola,2007,0.055
+Angola,2011,0.217
+Angola,2016,0.767
+Benin,2006,0.006999999999999999
+Benin,2012,0.32
+Benin,2014,0.131
+Benin,2018,0.37
+Burkina Faso,2010,0.247
+Burkina Faso,2014,0.278
+Burkina Faso,2018,0.794
+Burkina Faso,2021,0.485
+Burundi,2010,0.695
+Burundi,2012,0.6890000000000001
+Cameroon,2011,0.262
+Cameroon,2014,0.151
+Cameroon,2018,0.212
+Central African Republic,2010,0.095
+Central African Republic,2019,0.302
+Chad,2010,0.013000000000000001
+Chad,2015,0.1
+Chad,2019,0.20800000000000002
+Comoros,2012,0.16
+Congo,2005,0.14
+Congo,2012,0.16699999999999998
+Congo,2015,0.37
+Côte d'Ivoire,2016,0.6409999999999999
+Côte d'Ivoire,2021,0.386
+Democratic Republic of the Congo,2007,0.021
+Democratic Republic of the Congo,2010,0.040999999999999995
+Democratic Republic of the Congo,2014,0.17
+Democratic Republic of the Congo,2018,0.419
+Djibouti,2006,0.023
+Djibouti,2009,0.222
+East and Southern Africa,2022,0.6970000000000001
+Eastern Africa,2022,0.804
+Eastern and Southern Africa,2022,0.799
+Equatorial Guinea,2011,0.441
+Eritrea,2008,0.046
+Eswatini,2010,0.19699999999999998
+Ethiopia,2007,0.46799999999999997
+Ethiopia,2011,0.276
+Gabon,2012,0.34
+Gambia,2006,0.002
+Gambia,2013,0.379
+Gambia,2017,0.31
+Gambia,2018,0.29
+Gambia,2020,0.467
+Ghana,2006,0.07200000000000001
+Ghana,2008,0.47700000000000004
+Ghana,2011,0.34600000000000003
+Ghana,2014,0.782
+Ghana,2018,0.10099999999999999
+Ghana,2019,0.845
+Guinea,2012,0.048
+Guinea,2016,0.165
+Guinea,2018,0.182
+Guinea-Bissau,2006,0.038
+Guinea-Bissau,2014,0.47
+Guinea-Bissau,2019,0.19399999999999998
+India,2006,0.055999999999999994
+India,2016,0.085
+India,2021,0.06
+Kenya,2009,0.335
+Kenya,2010,0.513
+Kenya,2014,0.858
+Kenya,2015,0.915
+Kenya,2020,0.91
+Lao People's Democratic Republic,2006,0.018000000000000002
+Lao People's Democratic Republic,2012,0.105
+Lao People's Democratic Republic,2017,0.039
+Least developed countries,2022,0.5589999999999999
+Liberia,2009,0.445
+Liberia,2011,0.695
+Liberia,2013,0.429
+Liberia,2016,0.8109999999999999
+Liberia,2020,0.41200000000000003
+Madagascar,2009,0.052000000000000005
+Madagascar,2011,0.192
+Madagascar,2013,0.061
+Madagascar,2018,0.285
+Madagascar,2021,0.547
+Malawi,2006,0.006999999999999999
+Malawi,2010,0.835
+Malawi,2012,0.909
+Malawi,2014,0.883
+Malawi,2016,0.922
+Malawi,2017,0.9640000000000001
+Malawi,2020,0.49
+Mali,2010,0.22399999999999998
+Mali,2013,0.19
+Mali,2015,0.083
+Mali,2018,0.31
+Mali,2021,0.14800000000000002
+Mauritania,2007,0.053
+Mauritania,2011,0.064
+Mauritania,2015,0.08199999999999999
+Mauritania,2021,0.19
+Middle Africa,2022,0.431
+Mozambique,2007,0.217
+Mozambique,2011,0.599
+Mozambique,2015,0.9259999999999999
+Mozambique,2018,0.986
+Namibia,2009,0.31
+Namibia,2013,0.44799999999999995
+Nepal,2014,0.308
+Niger,2021,0.77
+Nigeria,2008,0.07200000000000001
+Nigeria,2010,0.12
+Nigeria,2011,0.109
+Nigeria,2013,0.183
+Nigeria,2015,0.376
+Nigeria,2017,0.20600000000000002
+Nigeria,2018,0.52
+Pakistan,2018,0.033
+Papua New Guinea,2018,0.7170000000000001
+Rwanda,2013,0.917
+Rwanda,2017,0.987
+Rwanda,2020,0.924
+Sao Tome and Principe,2009,0.428
+Sao Tome and Principe,2014,0.14300000000000002
+Senegal,2009,0.444
+Senegal,2011,0.261
+Senegal,2013,0.212
+Senegal,2014,0.106
+Senegal,2016,0.015
+Senegal,2017,0.655
+Senegal,2018,0.24
+Senegal,2021,0.017
+Sierra Leone,2005,0.023
+Sierra Leone,2008,0.214
+Sierra Leone,2010,0.31
+Sierra Leone,2013,0.7709999999999999
+Sierra Leone,2017,0.158
+Somalia,2006,0.107
+South Asia,2022,0.054000000000000006
+South Sudan,2009,0.506
+South Sudan,2010,0.08199999999999999
+Southeast Asia,2022,0.06
+Southern Asia,2022,0.054000000000000006
+Sub-Saharan Africa,2022,0.562
+Sudan,2010,0.32899999999999996
+Tajikistan,2005,0.002
+Timor-Leste,2010,0.06
+Timor-Leste,2016,0.111
+Togo,2006,0.027999999999999997
+Togo,2010,0.282
+Togo,2014,0.496
+Togo,2017,0.183
+Uganda,2006,0.049
+Uganda,2009,0.391
+Uganda,2015,0.867
+Uganda,2016,0.878
+Uganda,2018,0.877
+United Republic of Tanzania,2008,0.376
+United Republic of Tanzania,2010,0.622
+United Republic of Tanzania,2012,0.613
+United Republic of Tanzania,2016,0.434
+United Republic of Tanzania,2017,0.894
+Viet Nam,2011,0.001
+West and Central Africa,2022,0.445
+West and Central Africa,2022,0.44
+Western Africa,2022,0.473
+Zambia,2006,0.166
+Zambia,2007,0.28800000000000003
+Zambia,2008,0.293
+Zambia,2010,0.762
+Zambia,2012,0.856
+Zambia,2014,0.904
+Zambia,2019,0.33799999999999997
+Zimbabwe,2011,0.491
+Zimbabwe,2014,0.7879999999999999
