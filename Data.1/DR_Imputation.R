@@ -1,6 +1,8 @@
 install.packages("imputeTS")
 library(imputeTS)
 library(tidyverse)
+
+#............Practice.........................#
 data(tsAirgap)
 tsAirgap
 imp <- na_kalman(tsAirgap)
@@ -91,6 +93,8 @@ write_csv(data,file="CQ_Uganda_imp.csv")
 #####
 #####
 #####
+#..............................End of Practice.........................................#
+
 
 # PFCRT Database prep
 DU<-read_csv ("CQ_use.csv")
@@ -142,6 +146,9 @@ cq<- read_csv("CQ_imputed.csv")
 cq2 <- cq$country %>% unique()
 cq2 <- length(unique(cq$country))  
 
+
+#.........................Practice....................................#
+
 crt<-read_csv ("pfcrt_SNP.csv")
 crt2 <- crt$country %>% unique()
 crt2 <- length(unique(crt$country)) 
@@ -190,6 +197,7 @@ dt = pfcrt_complete[!is.na(pfcrt_complete$mean_cq),]
 #####
 #####
 #####
+
 
 # PFMDR1 Database prep
 cq<- read_csv("CQ_imputed.csv")
@@ -241,6 +249,8 @@ dt = pfmdr1_complete[!is.na(pfmdr1_complete$mean_cq),]
 #####
 #####
 #####
+#..............................End of Practice..............................................#
+
 
 # PFDHPS Database prep
 DU<-read_csv ("SP_use.csv")
@@ -291,6 +301,11 @@ write_csv(DU, file = "SP_imputed.csv")
 sp<- read_csv("SP_imputed.csv")
 sp2 <- sp$country %>% unique()
 sp2 <- length(unique(sp$country))  
+#####
+#####
+#####
+
+#.................................Practice...................................#
 
 dhps<-read_csv ("pfdhps_SNP.csv")
 dhps2 <- dhps$country %>% unique()
@@ -390,6 +405,9 @@ dt = pfdhfr_complete[!is.na(pfdhfr_complete$mean_sp),]
 #####
 #####
 
+#..............................End of Practice..............................................#
+
+
 # PFK-13 Database prep
 DU<-read_csv ("ACT_use.csv")
 DU <- DU %>% group_by(country, year) %>% summarise(mean_act=mean(ACT, na.rm = T))
@@ -444,6 +462,11 @@ write_csv(DU, file = "ACT_imputed.csv")
 act<- read_csv("ACT_imputed.csv")
 act2 <- act$country %>% unique()
 act2 <- length(unique(act$country))  
+#####
+#####
+#####
+
+#..................................Practice...............................#
 
 k13<-read_csv ("pfK13_SNP.csv")
 k13_2 <- k13$country %>% unique()
@@ -490,9 +513,6 @@ dt = pfk13_complete[!is.na(pfk13_complete$mean_act),]
 #pfk13_complete1 <- pfk13_complete1$country %>% unique()
 
 
-
-
-
 ####
 ####
 ####
@@ -507,3 +527,6 @@ crt <- crt %>% group_by(country, year) %>% mutate(mean_prev=mean(Prev_DR, na.rm 
 crt = crt$country %>% unique()
 NCountry <- (unique(crt$country))
 #NCountry <- length(unique(crt$country))
+
+#..............................End of Practice..............................................#
+

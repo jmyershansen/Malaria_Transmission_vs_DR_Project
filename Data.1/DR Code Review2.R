@@ -2,8 +2,8 @@
 #pfcrt_SNP <- pfcrt_SNP %>% mutate(Prev_DR=(present/tested)*100)
 #write_csv(pfcrt_SNP, file = "pfcrt_SNP.csv")
 
-EXTR <- read.csv("Extracted-points-data.csv")
-WWARN_full <- read_csv("WWARN_ACT_Partner_Drug_Mol_Surveyor_Data(6).csv")
+EXTR <- read.csv("Extracted-points-data.csv")   #This is the parasite rate data from ATLAS
+WWARN_full <- read_csv("WWARN_ACT_Partner_Drug_Mol_Surveyor_Data(6).csv")   #This is the drug resistance data from WWARN
 WWARN_full <- WWARN_full %>% mutate(year=(`study start`+`study end`)/2)
 WWARN_full$year <- ceiling (WWARN_full$year)
 
@@ -33,8 +33,9 @@ Complete_pfmdr1 <- Complete %>% filter(`marker group`=="pfmdr1 86Y")
 #write_csv(Complete, file = "pfcrt_pfmdr1_pm.csv")
 #write_csv(Complete_pfcrt, file = "pfcrt_pm.csv")
 #write_csv(Complete_pfmdr1, file = "pfmdr1_pm.csv")
+###### 
 
-######
+#Add Regions to the main pfcrt& pfmdr1 databases
 Old_data_pfcrt <- read_csv("WWARN_pfcrt.csv")
 
 Country_region <- Old_data_pfcrt[c(3,5)] %>% distinct(country, Region) %>% arrange(country)
@@ -57,6 +58,7 @@ pfcrt_SNP <- pfcrt_SNP %>% mutate(Prev_DR=(present/tested)*100)
 write_csv(pfcrt_SNP, file = "pfcrt_SNP.csv")
 ####
 
+###Pull up imputed CQ use and join to the main pfcrt databases
 cq<- read_csv("CQ_imputed.csv")
 #cq2 <- cq$country %>% unique()
 #cq2 <- length(unique(cq$country)) 
@@ -65,39 +67,41 @@ crt<-read_csv ("pfcrt_SNP.csv")
 #crt2 <- crt$country %>% unique()
 #crt2 <- length(unique(crt$country)) 
 
-
-b = crt$country %>% unique()
+#Stretch out main pfcrt database to accommodate imputed CQ use (between 2000-2022) when joined
+b <- crt$country %>% unique()
 # loop through and find min and max year, if any years are missing for a country add that row with NAs
 for(i in b){
-  ro = which(crt$country == i)
-  mi = min(crt$year[ro])
-  mi= ifelse(mi>2000,2000,mi)
-  ma = max(crt$year[ro])
-  ma = ifelse(ma<2022,2022,ma)
+  ro <- which(crt$country == i)
+  mi <- min(crt$year[ro])
+  mi <- ifelse(mi>2000,2000,mi)
+  ma <- max(crt$year[ro])
+  ma <- ifelse(ma<2022,2022,ma)
   my_range = mi:ma
-  x = which(!my_range %in% crt$year[ro])
+  x <- which(!my_range %in% crt$year[ro])
   if(length(x)>0){
     new_ros = crt[1:length(x),]
     new_ros$country = i
     new_ros$year = my_range[x]
     new_ros[,3:ncol(new_ros)] = NA
-    crt = rbind(crt, new_ros)
+    crt <- rbind(crt, new_ros)
   }
 }
 crt <- crt %>% arrange(country, year)
 #write_csv(crt, file = "pfcrt_SNP.csv")
 
+#Set up CQ use lag structure
 cq<- read_csv("CQ_imputed.csv")
 head(cq)
 cq<-cq%>%group_by(country)%>%mutate(drug_1yr_ago = lag(mean_cq,n=1),drug_2yr_ago = lag(mean_cq,n=2),
                                     drug_3yr_ago = lag(mean_cq,n=3),drug_4yr_ago = lag(mean_cq,n=4),drug_5yr_ago = lag(mean_cq,n=5))
 #write_csv(cq, file = "CQ_lag.csv")
 
-
+#Join CQ use lag structure to main pfcrt database
 pfcrt_complete <- right_join(crt, cq, by = c("country","year"))
 pfcrt_complete <- pfcrt_complete %>% arrange(country, year)
 #pfcrt_complete <- pfcrt_complete %>% arrange(year) %>% group_by(country, year)
 write_csv(pfcrt_complete, file = "pfcrt_prev&pr&cq.csv")
+
 
 pfcrt_complete<-read_csv ("pfcrt_prev&pr&cq.csv")
 pfcrt_complete2 <- pfcrt_complete$country %>% unique()
@@ -113,7 +117,7 @@ dt = pfcrt_complete[!duplicated(pfcrt_complete),]
 write_csv(dt, file = "pfcrt_prev&pr&cq.csv")
 #####
 #####
-
+## Join CQ use without the lag structure to pfcrt database
 cq<- read_csv("CQ_imputed.csv")
 
 pfcrt_complete <- left_join(crt, cq, by = c("country","year"))
@@ -132,6 +136,7 @@ pfmdr1_SNP <- read_csv ("pfmdr1_SNP.csv")
 pfmdr1_SNP <- pfmdr1_SNP %>% mutate(Prev_DR=(present/tested)*100)
 write_csv(pfmdr1_SNP, file = "pfmdr1_SNP.csv")
 
+### Pull up imputed CQ use and join to the main pfmdr1 databases
 cq<- read_csv("CQ_imputed.csv")
 #cq2 <- cq$country %>% unique()
 #cq2 <- length(unique(cq$country)) 
@@ -140,15 +145,15 @@ mdr<-read_csv ("pfmdr1_SNP.csv")
 #mdr2 <- mdr$country %>% unique()
 #mdr2 <- length(unique(mdr$country)) 
 
-
-b =mdr$country %>% unique()
+#Stretch out main pfmdr1 database to accommodate imputed CQ use (between 2000-2022) when joined
+b <-mdr$country %>% unique()
 # loop through and find min and max year, if any years are missing for a country add that row with NAs
 for(i in b){
-  ro = which(mdr$country == i)
-  mi = min(mdr$year[ro])
-  mi= ifelse(mi>2000,2000,mi)
-  ma = max(mdr$year[ro])
-  ma = ifelse(ma<2022,2022,ma)
+  ro <- which(mdr$country == i)
+  mi <- min(mdr$year[ro])
+  mi<- ifelse(mi>2000,2000,mi)
+  ma <- max(mdr$year[ro])
+  ma <- ifelse(ma<2022,2022,ma)
   my_range = mi:ma
   x = which(!my_range %in% mdr$year[ro])
   if(length(x)>0){
@@ -159,14 +164,16 @@ for(i in b){
     mdr = rbind(mdr, new_ros)
   }
 }
-mdr = mdr %>% arrange(country, year)
+mdr <- mdr %>% arrange(country, year)
 #write_csv(mdr, file = "pfmdr1_SNP.csv")
 
+#Set up CQ use lag structure (already done above)
 cq<- read_csv("CQ_imputed.csv")
 head(cq)
 cq<-cq%>%group_by(country)%>%mutate(drug_1yr_ago = lag(mean_cq,n=1),drug_2yr_ago = lag(mean_cq,n=2),
                                     drug_3yr_ago = lag(mean_cq,n=3),drug_4yr_ago = lag(mean_cq,n=4),drug_5yr_ago = lag(mean_cq,n=5))
 
+#Join CQ use lag structure to main pfmdr database
 pfmdr1_complete <- right_join(mdr, cq, by = c("country","year"))
 pfmdr1_complete <- pfcrt_complete %>% arrange(country, year)
 write_csv(pfmdr1_complete, file = "pfmdr1_prev&pr&cq.csv")
@@ -187,6 +194,7 @@ write_csv(dt, file = "pfmdr1_prev&pr&cq.csv")
 #####
 #####
 
+## Join CQ use without the lag structure to main pfmdr database
 cq<- read_csv("CQ_imputed.csv")
 
 pfmdr1_complete <- left_join(mdr, cq, by = c("country","year"))
@@ -198,8 +206,8 @@ write_csv(pfmdr1_complete, file = "pfmdr1_prev&pr&cq.1.csv")
 #####
 
 #DHPS
-EXTR1 <- read.csv("Extracted-points-data.1.csv")
-DHPS.DHFR <- read_csv("WWARN_pfdhfr_pfdhps_data.csv")
+EXTR1 <- read.csv("Extracted-points-data.1.csv") #This is the parasite rate data from ATLAS
+DHPS.DHFR <- read_csv("WWARN_pfdhfr_pfdhps_data.csv") #This is the drug resistance data from WWARN
 DHPS.DHFR <- DHPS.DHFR %>% mutate(year=(`study start year`+`study end year`)/2)
 DHPS.DHFR$year <- ceiling (DHPS.DHFR$year)
 
@@ -225,7 +233,7 @@ Complete_pfdhfr <- Complete2 %>% filter(`mutation`=="dhfr 108N")
 #Numstudies9 <- length(unique(Complete_pfdhps$`study id`))
 
 
-
+#Add Regions to the main pfdhps & pfdhfr databases
 Complete_pfdhps_region <- right_join(Country_region, Complete_pfdhps, by = "country")
 #write_csv(Complete_pfdhps_region, file = "pfdhps_pm_region.csv")
 write_csv(Complete_pfdhps_region, file = "pfdhps_SNP.csv")
@@ -252,6 +260,7 @@ Numstudies0 <- length(unique(pfdhfr_SNP$`Prev_DR`))
 #####
 #####
 
+### Pull up imputed SP use and join to the main pfdhps databases
 sp<- read_csv("SP_imputed.csv")
 #sq2 <- sp$country %>% unique()
 #sq2 <- length(unique(sp$country)) 
@@ -260,17 +269,17 @@ dhps<-read_csv ("pfdhps_SNP.csv")
 #dhps2 <- dhps$country %>% unique()
 #dhps2 <- length(unique(dhps$country)) 
 
-
-e = dhps$country %>% unique()
+#Stretch out main pfdhps database to accommodate imputed SP use (between 2000-2022) when joined
+e <- dhps$country %>% unique()
 # loop through and find min and max year, if any years are missing for a country add that row with NAs
 for(i in e){
-  ro = which(dhps$country == i)
-  mi = min(dhps$year[ro])
-  mi= ifelse(mi>2000,2000,mi)
-  ma = max(dhps$year[ro])
-  ma = ifelse(ma<2022,2022,ma)
+  ro <- which(dhps$country == i)
+  mi <- min(dhps$year[ro])
+  mi <- ifelse(mi>2000,2000,mi)
+  ma <- max(dhps$year[ro])
+  ma <- ifelse(ma<2022,2022,ma)
   my_range = mi:ma
-  x = which(!my_range %in% dhps$year[ro])
+  x <- which(!my_range %in% dhps$year[ro])
   if(length(x)>0){
     new_ros = dhps[1:length(x),]
     new_ros$country = i
@@ -279,18 +288,19 @@ for(i in e){
     dhps = rbind(dhps, new_ros)
   }
 }
-dhps = dhps %>% arrange(country, year)
+dhps <- dhps %>% arrange(country, year)
 #write_csv(dhps, file = "pfdhps_SNP.csv")
 
-sp<- read_csv("SP_imputed.csv")
+#Set up SP use lag structure
+sp <- read_csv("SP_imputed.csv")
 head(sp)
 sp<-sp%>%group_by(country)%>%mutate(drug_1yr_ago = lag(mean_sp,n=1),drug_2yr_ago = lag(mean_sp,n=2),
                                     drug_3yr_ago = lag(mean_sp,n=3),drug_4yr_ago = lag(mean_sp,n=4),drug_5yr_ago = lag(mean_sp,n=5))
 
+#Join SP use lag structure to main pfdhps database
 pfdhps_complete <- right_join(dhps, sp, by = c("country","year"))
 pfdhps_complete <- pfdhps_complete %>% arrange(country, year)
 write_csv(pfdhps_complete, file = "pfdhps_prev&pr&sp.csv")
-
 
 
 pfdhps_complete<-read_csv ("pfdhps_prev&pr&sp.csv")
@@ -308,6 +318,7 @@ write_csv(dt, file = "pfdhps_prev&pr&sp.csv")
 #####
 #####
 
+## Join SP use without the lag structure to main pfdhps database
 sp<- read_csv("SP_imputed.csv")
 
 pfdhps_complete <- left_join(dhps, sp, by = c("country","year"))
@@ -320,6 +331,8 @@ write_csv(pfdhps_complete, file = "pfdhps_prev&pr&sp.1.csv")
 
 
 ##DHFR
+
+### Pull up imputed SP use and join to the main pfdhfr databases
 sp<- read_csv("SP_imputed.csv")
 #sp2 <- sp$country %>% unique()
 #sp2 <- length(unique(sp$country)) 
@@ -328,7 +341,7 @@ dhfr<-read_csv ("pfdhfr_SNP.csv")
 #dhfr2 <- dhfr$country %>% unique()
 #dhfr2 <- length(unique(dhfr$country)) 
 
-
+#Stretch out main pfdhfr database to accommodate imputed SP use (between 2000-2022) when joined
 e = dhfr$country %>% unique()
 # loop through and find min and max year, if any years are missing for a country add that row with NAs
 for(i in e){
@@ -350,15 +363,16 @@ for(i in e){
 dhfr = dhfr %>% arrange(country, year)
 #write_csv(dhfr, file = "pfdhfr_SNP.csv")
 
+#Set up SP use lag structure (already done above)
 sp<- read_csv("SP_imputed.csv")
 head(sp)
 sp<-sp%>%group_by(country)%>%mutate(drug_1yr_ago = lag(mean_sp,n=1),drug_2yr_ago = lag(mean_sp,n=2),
                                     drug_3yr_ago = lag(mean_sp,n=3),drug_4yr_ago = lag(mean_sp,n=4),drug_5yr_ago = lag(mean_sp,n=5))
 
+#Join SP use lag structure to main pfdhfr database
 pfdhfr_complete <- right_join(dhfr, sp, by = c("country","year"))
 pfdhfr_complete <- pfdhfr_complete %>% arrange(country, year)
 write_csv(pfdhfr_complete, file = "pfdhfr_prev&pr&sp.csv")
-
 
 
 pfdhfr_complete<-read_csv ("pfdhfr_prev&pr&sp.csv")
@@ -375,6 +389,8 @@ write_csv(dt, file = "pfdhfr_prev&pr&sp.csv")
 #####
 #####
 
+
+## Join SP use without the lag structure to main pfdfr database
 sp<- read_csv("SP_imputed.csv")
 
 pfdhfr_complete <- left_join(dhfr, sp, by = c("country","year"))
@@ -386,8 +402,8 @@ write_csv(pfdhfr_complete, file = "pfdhfr_prev&pr&sp.1.csv")
 #####
 
 #K13
-EXTR2 <- read.csv("Extracted-points-data.2.csv")
-K13 <- read_csv("K13_surveyor_data.csv")
+EXTR2 <- read.csv("Extracted-points-data.2.csv") #This is the parasite rate data from ATLAS
+K13 <- read_csv("K13_surveyor_data.csv") #This is the drug resistance data from WWARN
 
 colnames(K13)[7] <- "long"
 
@@ -409,7 +425,7 @@ Complete_pfK13 <- Complete3 %>% filter(`mutation`=="C580Y")
 #Numstudies8 <- length(unique(Complete_pfK13$`sid`))
 
 
-
+#Add Regions to the main pfk13 database
 Complete_pfK13_region <- right_join(Country_region, Complete_pfK13, by = "country")
 write_csv(Complete_pfK13_region, file = "pfk13_SNP.csv")
 
@@ -424,6 +440,7 @@ write_csv(pfK13_SNP, file = "pfk13_SNP.csv")
 #####
 #####
 
+### Pull up imputed ACT use and join to the main pfk13 database
 act<- read_csv("ACT_imputed.csv")
 #act2 <- act$country %>% unique()
 #act2 <- length(unique(act$country))
@@ -432,7 +449,7 @@ k13<-read_csv ("pfk13_SNP.csv")
 #k13_2 <- k13$country %>% unique()
 #k13_2  <- length(unique(k13$country)) 
 
-
+#Stretch out main pfk13 database to accommodate imputed ACT use (between 2000-2022) when joined
 e = k13$country %>% unique()
 # loop through and find min and max year, if any years are missing for a country add that row with NAs
 for(i in e){
@@ -454,15 +471,16 @@ for(i in e){
 k13 = k13 %>% arrange(country, year)
 #write_csv(k13, file = "pfk13_SNP.csv")
 
+#Set up ACT use lag structure
 act<- read_csv("ACT_imputed.csv")
 head(act)
 act<-act%>%group_by(country)%>%mutate(drug_1yr_ago = lag(mean_act,n=1),drug_2yr_ago = lag(mean_act,n=2),
                                     drug_3yr_ago = lag(mean_act,n=3),drug_4yr_ago = lag(mean_act,n=4),drug_5yr_ago = lag(mean_act,n=5))
 
+#Join ACT use lag structure to main pfk13 database
 pfk13_complete <- right_join(k13, act, by = c("country","year"))
 pfk13_complete <- pfk13_complete %>% arrange(country, year)
 write_csv(pfk13_complete, file = "pfk13_prev&pr&act.csv")
-
 
 
 pfk13_complete<-read_csv ("pfk13_prev&pr&act.csv")
@@ -479,6 +497,7 @@ write_csv(dt, file = "pfk13_prev&pr&act.csv")
 #####
 #####
 
+## Join ACT use without the lag structure to main pfk13 database
 act<- read_csv("ACT_imputed.csv")
 
 pfk13_complete <- left_join(k13, act, by = c("country","year"))
@@ -490,6 +509,7 @@ write_csv(pfk13_complete, file = "pfk13_prev&pr&act.1.csv")
 ######
 ######
 
+##........................................................##
 ###CRT
 DU <- read_csv("pfcrt_prev&pr&cq.1.csv")
 #pfcrt_complete <- pfcrt_complete %>% distinct(country,year,mean_cq)
